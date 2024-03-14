@@ -7,80 +7,84 @@
     --heading: "Roboto Mono", monospace;
   }
   
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-size: 62.5%;
-  }
-  
-  body {
-    background-color: var(--dark-blue);
-    width: 100%;
-    padding: 0 50px;
-  }
-  
-  #converter-title {
-    background-color: var(--grayish-blue);
-    color: var(--white);
-    width: calc(100% - 80px);
-    text-align: center;
-    padding: 40px;
-    margin: 40px auto;
-    border: 2px dashed;
-    font-family: var(--heading);
-    font-size: 4.5rem;
-    border-radius: 5px;
-  }
-  
-  .converter-input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  #number {
-    border-radius: 5px;
-    border: none;
-    height: 50px;
-    padding: 30px;
-    width: 400px;
-    font-family: var(--text);
-    margin-right: 15px;
-    font-size: 2.2rem;
-  }
-  
-  #convert-btn {
-    background-color: var(--orange);
-    font-family: var(--text);
-    border-radius: 5px;
-    border: none;
-    height: 60px;
-    padding: 15px 30px;
-    cursor: pointer;
-    font-size: 2.2rem;
-  }
-  
-  #output {
-    background-color: var(--grayish-blue);
-    color: var(--white);
-    height: fit-content;
-    width: fit-content;
-    padding: 35px 40px;
-    border-radius: 5px;
-    font-family: var(--text);
-    font-size: 2.5rem;
-    display: block;
-    margin: 50px auto;
-    border: 1px solid var(--white);
-    box-shadow: 0 0 20px var(--orange);
-  }
-  
-  .output-span {
-    font-weight: 900;
-    font-size: 3rem;
-    color: #fff;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--dark-blue);
+  width: 100%;
+  padding: 0 60px;
+}
+
+#converter-title {
+  background-color: var(--grayish-blue);
+  color: var(--white);
+  width: 100%;
+  text-align: center;
+  padding: 35px;
+  margin: 40px auto;
+  border: 3px dashed;
+  font-family: var(--heading);
+  font-size: 4.5rem;
+  border-radius: 5px;
+}
+
+.converter-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input, button {
+  font-family: var(--text);
+  border-radius: 5px;
+  border: none;
+  height: 60px;
+  font-size: 2.2rem;
+}
+
+#number {
+  padding: 20px;
+  width: 500px;
+  margin-right: 15px;
+}
+
+#convert-btn {
+  background-color: var(--orange);
+  width: 130px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+#convert-btn:hover {
+  background-color: #dfa400;
+}
+
+#output {
+  background-color: var(--grayish-blue);
+  height: fit-content;
+  width: fit-content;
+  padding: 35px;
+  border-radius: 5px;
+  display: block;
+  margin: 60px auto 0;
+  border: 1px solid var(--white);
+  box-shadow: 0 0 20px var(--orange);
+  /* max-width: 100%; */
+  word-wrap: break-word;
+}
+
+.output-span {
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--white);
+  font-family: var(--text);
+}
   
   
   
