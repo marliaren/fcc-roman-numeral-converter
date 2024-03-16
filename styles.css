@@ -1,5 +1,5 @@
 :root {
-    --dark-blue: #1b1b32;
+    --dark-blue: #0A0A23;
     --orange: #f1be32;
     --white: #fff;
     --grayish-blue: #3B3B4F;
@@ -34,7 +34,7 @@ body {
   width: min(100vw, 460px);
   text-align: center;
   padding: 20px;
-  margin: 40px auto;
+  margin: 0 0 40px;
   border: 2px dashed;
   font-family: var(--heading);
   font-size: 4rem;
@@ -117,10 +117,11 @@ button {
 
 .output-span {
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   color: var(--white);
   font-family: var(--text);
-  letter-spacing: 2px;
+  text-align: center;
+  line-height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;

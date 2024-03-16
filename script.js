@@ -108,15 +108,15 @@ function romanNumeralConverter(event) {
      let number = parseInt(numberInput.value); //convert to integer
   
      if (number === '' || number === null || isNaN(number)) { 
-      output.innerHTML = `<span class="output-span">Please enter a valid number</span>`;
+      output.innerHTML = `<span class="output-span">Please enter a valid number.</span>`;
       output.style.display = 'block';
     }
     else if (number < 1) {
-      output.innerHTML = `<span class="output-span">Please enter a number greater than or equal to 1</span>`;
+      output.innerHTML = `<span class="output-span">Please enter a number greater than or equal to 1.</span>`;
       output.style.display = 'block';
     }
     else if (number >= 4000) {
-      output.innerHTML = `<span class="output-span">Please enter a number less than or equal to 3999</span>`;
+      output.innerHTML = `<span class="output-span">Please enter a number less than or equal to 3999.</span>`;
       output.style.display = 'block';
     }
   
