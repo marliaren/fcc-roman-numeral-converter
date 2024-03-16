@@ -16,49 +16,85 @@
 
 body {
   background-color: var(--dark-blue);
+  /* padding: 0 60px; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 0 60px;
+  min-height: 100vh;
 }
 
 #converter-title {
   background-color: var(--grayish-blue);
   color: var(--white);
-  width: 100%;
+  width: min(100vw, 460px);
   text-align: center;
-  padding: 35px;
+  padding: 20px;
   margin: 40px auto;
-  border: 3px dashed;
+  border: 2px dashed;
   font-family: var(--heading);
-  font-size: 4.5rem;
-  border-radius: 5px;
+  font-size: 4rem;
+  border-radius: 10px;
+}
+
+
+.converter {
+  width: min(100vw, 460px);
+  background-color: var(--grayish-blue);
+  height: fit-content;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+label {
+  font-family: var(--text);
+  color: var(--white);
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 15px;
+}
+
+input, button {
+  font-family: var(--text);
+  border-radius: 10px;
+  border: none;
+  height: 50px;
 }
 
 .converter-input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-}
-
-input, button {
-  font-family: var(--text);
-  border-radius: 5px;
-  border: none;
-  height: 60px;
-  font-size: 2.2rem;
 }
 
 #number {
   padding: 20px;
-  width: 500px;
-  margin-right: 15px;
+  width: 100%;
+  margin-right: 10px;
+  font-size: 2.2rem;
+}
+
+button {
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.9rem;
 }
 
 #convert-btn {
   background-color: var(--orange);
-  width: 130px;
-  padding: 15px 30px;
-  cursor: pointer;
+  margin-right: 10px;
+}
+
+#clear-btn {
+  background-color: red;
+  color: var(--white);
 }
 
 #convert-btn:hover {
@@ -68,22 +104,26 @@ input, button {
 #output {
   background-color: var(--grayish-blue);
   height: fit-content;
-  width: fit-content;
+  width: min(100vw, 460px);
   padding: 35px;
-  border-radius: 5px;
+  border-radius: 10px;
   display: block;
-  margin: 60px auto 0;
+  margin: 30px auto 10px;
   border: 1px solid var(--white);
-  box-shadow: 0 0 20px var(--orange);
-  /* max-width: 100%; */
+  box-shadow: 0 0 15px var(--orange);
+  max-width: 100%;
   word-wrap: break-word;
 }
 
 .output-span {
   font-weight: 600;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: var(--white);
   font-family: var(--text);
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
   
   

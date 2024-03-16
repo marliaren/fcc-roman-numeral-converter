@@ -1,9 +1,16 @@
 const numberInput = document.getElementById('number');
 const convertBtn = document.getElementById('convert-btn');
+const clearBtn = document.getElementById('clear-btn');
 const output = document.getElementById('output');
 
 // default to none first. output will only appear when check button is clicked / enter
 output.style.display = 'none';
+
+clearBtn.addEventListener("click", () => {
+  output.innerHTML = '';
+  output.style.display = 'none';
+  numberInput.value = '';
+});
 
 // function romanNumeralConverter(event) {
 //   event.preventDefault();

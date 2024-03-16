@@ -8,14 +8,18 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1 id="converter-title">Roman Numeral Converter</h1>
-
-    <div class="converter-input">
-      <input type="number" id="number" placeholder="Enter Arabic Numeral to convert" required/>
-      <button id="convert-btn">Convert</button>
-    </div>
-
-    <div id="output"></div>
+    <main class="container">
+      <h1 id="converter-title">Roman Numeral Converter</h1>
+      <div class="converter">
+        <label for="number">Enter Arabic numeral to convert.</label>
+        <div class="converter-input">
+          <input type="number" id="number" placeholder="Ex: 420" required/>
+          <button id="convert-btn">Convert</button>
+          <button id="clear-btn">Clear</button>
+        </div>
+        <div id="output"></div>
+      </div>
+    </main>
     
     <script src="script.js"></script>
   </body>
